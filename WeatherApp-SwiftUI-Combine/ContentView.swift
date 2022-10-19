@@ -8,15 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+    @State private var selection: Tab = .weather
+    
+    enum Tab {
+        case weather
+        case onlineShopping
     }
+    
+    var body: some View {
+        TabView(selection: $selection) {
+            OnlineShoppingView()
+                .tabItem {
+                    Label("Weather", systemImage: "cloud.sun.rain.fill")
+                }
+                .tag(Tab.weather)
+            
+            OnlineShoppingView()
+                .tabItem {
+                    Label("Online Shopping", systemImage: "cart")
+                }
+                .tag(Tab.onlineShopping)
+        }
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -24,3 +38,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

@@ -20,6 +20,13 @@
 		D8F31AD5290030E800662653 /* MockCurrentWeatherResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */; };
 		D8F31AD6290030E800662653 /* MockCurrentWeatherResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */; };
 		D8F31AD7290030E800662653 /* MockCurrentWeatherResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */; };
+		D8F31ADE2900319800662653 /* WebViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31AD92900319600662653 /* WebViewViewModel.swift */; };
+		D8F31AE12900319800662653 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31ADA2900319700662653 /* WebView.swift */; };
+		D8F31AE42900319800662653 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31ADB2900319700662653 /* Loader.swift */; };
+		D8F31AE72900319800662653 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31ADC2900319700662653 /* ActivityIndicator.swift */; };
+		D8F31AEE2900332F00662653 /* OnlineShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31AED2900332F00662653 /* OnlineShoppingView.swift */; };
+		D8F31AEF2900332F00662653 /* OnlineShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31AED2900332F00662653 /* OnlineShoppingView.swift */; };
+		D8F31AF02900332F00662653 /* OnlineShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31AED2900332F00662653 /* OnlineShoppingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,11 @@
 		D8F31ABA29002DC300662653 /* WeatherApp_SwiftUI_CombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp_SwiftUI_CombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D8F31AD0290030E700662653 /* MockForecastWeatherResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockForecastWeatherResponse.json; sourceTree = "<group>"; };
 		D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCurrentWeatherResponse.json; sourceTree = "<group>"; };
+		D8F31AD92900319600662653 /* WebViewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewModel.swift; sourceTree = "<group>"; };
+		D8F31ADA2900319700662653 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D8F31ADB2900319700662653 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		D8F31ADC2900319700662653 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		D8F31AED2900332F00662653 /* OnlineShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShoppingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +114,10 @@
 		D8F31A9C29002DC100662653 /* WeatherApp-SwiftUI-Combine */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31A9F29002DC100662653 /* ContentView.swift */,
 				D8F31AC829002FD500662653 /* WeatherModule */,
 				D8F31AC729002FBB00662653 /* OnlineShoppingModule */,
 				D8F31A9D29002DC100662653 /* WeatherApp_SwiftUI_CombineApp.swift */,
-				D8F31A9F29002DC100662653 /* ContentView.swift */,
 				D8F31ACD2900301400662653 /* Network */,
 				D8F31ACE2900301B00662653 /* Helper */,
 				D8F31ACF2900302400662653 /* Extension */,
@@ -144,6 +156,7 @@
 		D8F31AC729002FBB00662653 /* OnlineShoppingModule */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31AED2900332F00662653 /* OnlineShoppingView.swift */,
 			);
 			path = OnlineShoppingModule;
 			sourceTree = "<group>";
@@ -198,6 +211,7 @@
 		D8F31ACE2900301B00662653 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31AD82900316200662653 /* WebView */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -207,6 +221,17 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D8F31AD82900316200662653 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D8F31ADC2900319700662653 /* ActivityIndicator.swift */,
+				D8F31ADB2900319700662653 /* Loader.swift */,
+				D8F31ADA2900319700662653 /* WebView.swift */,
+				D8F31AD92900319600662653 /* WebViewViewModel.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,7 +371,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F31AA029002DC100662653 /* ContentView.swift in Sources */,
+				D8F31AE12900319800662653 /* WebView.swift in Sources */,
+				D8F31ADE2900319800662653 /* WebViewViewModel.swift in Sources */,
+				D8F31AEE2900332F00662653 /* OnlineShoppingView.swift in Sources */,
 				D8F31A9E29002DC100662653 /* WeatherApp_SwiftUI_CombineApp.swift in Sources */,
+				D8F31AE72900319800662653 /* ActivityIndicator.swift in Sources */,
+				D8F31AE42900319800662653 /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F31AAF29002DC300662653 /* WeatherApp_SwiftUI_CombineTests.swift in Sources */,
+				D8F31AEF2900332F00662653 /* OnlineShoppingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F31AF02900332F00662653 /* OnlineShoppingView.swift in Sources */,
 				D8F31AB929002DC300662653 /* WeatherApp_SwiftUI_CombineUITests.swift in Sources */,
 				D8F31ABB29002DC300662653 /* WeatherApp_SwiftUI_CombineUITestsLaunchTests.swift in Sources */,
 			);
@@ -512,7 +544,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,7 +573,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
