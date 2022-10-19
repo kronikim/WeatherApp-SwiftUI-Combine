@@ -59,6 +59,10 @@
 		D8F31B242900415E00662653 /* DailyForecastWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */; };
 		D8F31B2729004C4500662653 /* HourlyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B2629004C4500662653 /* HourlyForecastView.swift */; };
 		D8F31B2929004C7600662653 /* HourlyForecastWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B2829004C7600662653 /* HourlyForecastWeatherCell.swift */; };
+		D8F31B2B29005A0E00662653 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B2A29005A0E00662653 /* HTTPMethod.swift */; };
+		D8F31B2D29005A5000662653 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B2C29005A5000662653 /* EndpointProtocol.swift */; };
+		D8F31B2F29005A7700662653 /* WeatherEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B2E29005A7700662653 /* WeatherEndpoint.swift */; };
+		D8F31B3129005B1B00662653 /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B3029005B1B00662653 /* WeatherServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,10 @@
 		D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastWeatherView.swift; sourceTree = "<group>"; };
 		D8F31B2629004C4500662653 /* HourlyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastView.swift; sourceTree = "<group>"; };
 		D8F31B2829004C7600662653 /* HourlyForecastWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastWeatherCell.swift; sourceTree = "<group>"; };
+		D8F31B2A29005A0E00662653 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		D8F31B2C29005A5000662653 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		D8F31B2E29005A7700662653 /* WeatherEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEndpoint.swift; sourceTree = "<group>"; };
+		D8F31B3029005B1B00662653 /* WeatherServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +265,10 @@
 		D8F31ACD2900301400662653 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31B2A29005A0E00662653 /* HTTPMethod.swift */,
+				D8F31B2C29005A5000662653 /* EndpointProtocol.swift */,
+				D8F31B2E29005A7700662653 /* WeatherEndpoint.swift */,
+				D8F31B3029005B1B00662653 /* WeatherServiceProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -456,12 +468,14 @@
 				D8F31B242900415E00662653 /* DailyForecastWeatherView.swift in Sources */,
 				D8F31B1429003D8A00662653 /* WeatherBackgroundView.swift in Sources */,
 				D8F31AF32900371100662653 /* CurrentWeatherResponse.swift in Sources */,
+				D8F31B3129005B1B00662653 /* WeatherServiceProtocol.swift in Sources */,
 				D8F31AE12900319800662653 /* WebView.swift in Sources */,
 				D8F31AFB290037C600662653 /* CurrentWeatherMainValue.swift in Sources */,
 				D8F31ADE2900319800662653 /* WebViewViewModel.swift in Sources */,
 				D8F31B032900391100662653 /* Date+Extension.swift in Sources */,
 				D8F31AF72900376100662653 /* Weather.swift in Sources */,
 				D8F31AEE2900332F00662653 /* OnlineShoppingView.swift in Sources */,
+				D8F31B2D29005A5000662653 /* EndpointProtocol.swift in Sources */,
 				D8F31B0F29003B5200662653 /* MockCurrentWeatherBuilder.swift in Sources */,
 				D8F31B2929004C7600662653 /* HourlyForecastWeatherCell.swift in Sources */,
 				D8F31B1D29003FE600662653 /* String+Extension.swift in Sources */,
@@ -470,7 +484,9 @@
 				D8F31A9E29002DC100662653 /* WeatherApp_SwiftUI_CombineApp.swift in Sources */,
 				D8F31AFF290037F600662653 /* ForecastWeatherResponse.swift in Sources */,
 				D8F31AE72900319800662653 /* ActivityIndicator.swift in Sources */,
+				D8F31B2B29005A0E00662653 /* HTTPMethod.swift in Sources */,
 				D8F31B0B29003B3E00662653 /* MockForecastWeatherBuilder.swift in Sources */,
+				D8F31B2F29005A7700662653 /* WeatherEndpoint.swift in Sources */,
 				D8F31B20290040B500662653 /* DailyForecastWeatherRow.swift in Sources */,
 				D8F31AE42900319800662653 /* Loader.swift in Sources */,
 			);
