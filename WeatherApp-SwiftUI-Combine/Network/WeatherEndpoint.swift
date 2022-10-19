@@ -32,7 +32,7 @@ enum WeatherEndpoint: EndpointProtocol {
 
     var headers: [String : String] {
         return [
-            "Content-type": "application/json",
+            "Content-type": "application/json; charset=utf-8",
             "Accept": "application/json"
         ]
     }
