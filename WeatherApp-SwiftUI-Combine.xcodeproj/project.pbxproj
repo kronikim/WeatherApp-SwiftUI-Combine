@@ -54,6 +54,9 @@
 		D8F31B1429003D8A00662653 /* WeatherBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B1329003D8A00662653 /* WeatherBackgroundView.swift */; };
 		D8F31B1829003DE700662653 /* TodayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B1729003DE700662653 /* TodayWeatherView.swift */; };
 		D8F31B1D29003FE600662653 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B1C29003FE600662653 /* String+Extension.swift */; };
+		D8F31B20290040B500662653 /* DailyForecastWeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B1F290040B500662653 /* DailyForecastWeatherRow.swift */; };
+		D8F31B222900410500662653 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B212900410500662653 /* WeatherIcon.swift */; };
+		D8F31B242900415E00662653 /* DailyForecastWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,9 @@
 		D8F31B1329003D8A00662653 /* WeatherBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBackgroundView.swift; sourceTree = "<group>"; };
 		D8F31B1729003DE700662653 /* TodayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherView.swift; sourceTree = "<group>"; };
 		D8F31B1C29003FE600662653 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D8F31B1F290040B500662653 /* DailyForecastWeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastWeatherRow.swift; sourceTree = "<group>"; };
+		D8F31B212900410500662653 /* WeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
+		D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,7 @@
 		D8F31ACB29002FF800662653 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31B212900410500662653 /* WeatherIcon.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -293,6 +300,7 @@
 		D8F31B1229003D5500662653 /* WeatherMainView */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31B1E2900409E00662653 /* DailyForecastComponent */,
 				D8F31B1929003DEB00662653 /* TodayWeatherComponent */,
 				D8F31B1329003D8A00662653 /* WeatherBackgroundView.swift */,
 			);
@@ -305,6 +313,15 @@
 				D8F31B1729003DE700662653 /* TodayWeatherView.swift */,
 			);
 			path = TodayWeatherComponent;
+			sourceTree = "<group>";
+		};
+		D8F31B1E2900409E00662653 /* DailyForecastComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D8F31B1F290040B500662653 /* DailyForecastWeatherRow.swift */,
+				D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */,
+			);
+			path = DailyForecastComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +461,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F31AA029002DC100662653 /* ContentView.swift in Sources */,
+				D8F31B222900410500662653 /* WeatherIcon.swift in Sources */,
+				D8F31B242900415E00662653 /* DailyForecastWeatherView.swift in Sources */,
 				D8F31B1429003D8A00662653 /* WeatherBackgroundView.swift in Sources */,
 				D8F31AF32900371100662653 /* CurrentWeatherResponse.swift in Sources */,
 				D8F31AE12900319800662653 /* WebView.swift in Sources */,
@@ -460,6 +479,7 @@
 				D8F31AFF290037F600662653 /* ForecastWeatherResponse.swift in Sources */,
 				D8F31AE72900319800662653 /* ActivityIndicator.swift in Sources */,
 				D8F31B0B29003B3E00662653 /* MockForecastWeatherBuilder.swift in Sources */,
+				D8F31B20290040B500662653 /* DailyForecastWeatherRow.swift in Sources */,
 				D8F31AE42900319800662653 /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
