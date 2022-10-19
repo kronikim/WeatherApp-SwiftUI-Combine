@@ -57,6 +57,8 @@
 		D8F31B20290040B500662653 /* DailyForecastWeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B1F290040B500662653 /* DailyForecastWeatherRow.swift */; };
 		D8F31B222900410500662653 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B212900410500662653 /* WeatherIcon.swift */; };
 		D8F31B242900415E00662653 /* DailyForecastWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */; };
+		D8F31B2729004C4500662653 /* HourlyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B2629004C4500662653 /* HourlyForecastView.swift */; };
+		D8F31B2929004C7600662653 /* HourlyForecastWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B2829004C7600662653 /* HourlyForecastWeatherCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		D8F31B1F290040B500662653 /* DailyForecastWeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastWeatherRow.swift; sourceTree = "<group>"; };
 		D8F31B212900410500662653 /* WeatherIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
 		D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastWeatherView.swift; sourceTree = "<group>"; };
+		D8F31B2629004C4500662653 /* HourlyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastView.swift; sourceTree = "<group>"; };
+		D8F31B2829004C7600662653 /* HourlyForecastWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastWeatherCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,28 +304,14 @@
 		D8F31B1229003D5500662653 /* WeatherMainView */ = {
 			isa = PBXGroup;
 			children = (
-				D8F31B1E2900409E00662653 /* DailyForecastComponent */,
-				D8F31B1929003DEB00662653 /* TodayWeatherComponent */,
+				D8F31B2629004C4500662653 /* HourlyForecastView.swift */,
+				D8F31B2829004C7600662653 /* HourlyForecastWeatherCell.swift */,
+				D8F31B1F290040B500662653 /* DailyForecastWeatherRow.swift */,
+				D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */,
+				D8F31B1729003DE700662653 /* TodayWeatherView.swift */,
 				D8F31B1329003D8A00662653 /* WeatherBackgroundView.swift */,
 			);
 			path = WeatherMainView;
-			sourceTree = "<group>";
-		};
-		D8F31B1929003DEB00662653 /* TodayWeatherComponent */ = {
-			isa = PBXGroup;
-			children = (
-				D8F31B1729003DE700662653 /* TodayWeatherView.swift */,
-			);
-			path = TodayWeatherComponent;
-			sourceTree = "<group>";
-		};
-		D8F31B1E2900409E00662653 /* DailyForecastComponent */ = {
-			isa = PBXGroup;
-			children = (
-				D8F31B1F290040B500662653 /* DailyForecastWeatherRow.swift */,
-				D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */,
-			);
-			path = DailyForecastComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F31B2729004C4500662653 /* HourlyForecastView.swift in Sources */,
 				D8F31AA029002DC100662653 /* ContentView.swift in Sources */,
 				D8F31B222900410500662653 /* WeatherIcon.swift in Sources */,
 				D8F31B242900415E00662653 /* DailyForecastWeatherView.swift in Sources */,
@@ -472,6 +463,7 @@
 				D8F31AF72900376100662653 /* Weather.swift in Sources */,
 				D8F31AEE2900332F00662653 /* OnlineShoppingView.swift in Sources */,
 				D8F31B0F29003B5200662653 /* MockCurrentWeatherBuilder.swift in Sources */,
+				D8F31B2929004C7600662653 /* HourlyForecastWeatherCell.swift in Sources */,
 				D8F31B1D29003FE600662653 /* String+Extension.swift in Sources */,
 				D8F31B1829003DE700662653 /* TodayWeatherView.swift in Sources */,
 				D8F31B072900399600662653 /* Int+Extension.swift in Sources */,
