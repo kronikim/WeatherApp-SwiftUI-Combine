@@ -94,8 +94,14 @@
 		D8F31A9C29002DC100662653 /* WeatherApp-SwiftUI-Combine */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31AC829002FD500662653 /* WeatherModule */,
+				D8F31AC729002FBB00662653 /* OnlineShoppingModule */,
 				D8F31A9D29002DC100662653 /* WeatherApp_SwiftUI_CombineApp.swift */,
 				D8F31A9F29002DC100662653 /* ContentView.swift */,
+				D8F31ACD2900301400662653 /* Network */,
+				D8F31ACE2900301B00662653 /* Helper */,
+				D8F31ACF2900302400662653 /* Extension */,
+				D8F31ACC2900300700662653 /* MockResponse */,
 				D8F31AA129002DC200662653 /* Assets.xcassets */,
 				D8F31AA329002DC200662653 /* Preview Content */,
 			);
@@ -125,6 +131,72 @@
 				D8F31ABA29002DC300662653 /* WeatherApp_SwiftUI_CombineUITestsLaunchTests.swift */,
 			);
 			path = "WeatherApp-SwiftUI-CombineUITests";
+			sourceTree = "<group>";
+		};
+		D8F31AC729002FBB00662653 /* OnlineShoppingModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnlineShoppingModule;
+			sourceTree = "<group>";
+		};
+		D8F31AC829002FD500662653 /* WeatherModule */ = {
+			isa = PBXGroup;
+			children = (
+				D8F31ACB29002FF800662653 /* ViewModel */,
+				D8F31ACA29002FF200662653 /* View */,
+				D8F31AC929002FEB00662653 /* Model */,
+			);
+			path = WeatherModule;
+			sourceTree = "<group>";
+		};
+		D8F31AC929002FEB00662653 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8F31ACA29002FF200662653 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8F31ACB29002FF800662653 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8F31ACC2900300700662653 /* MockResponse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MockResponse;
+			sourceTree = "<group>";
+		};
+		D8F31ACD2900301400662653 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D8F31ACE2900301B00662653 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D8F31ACF2900302400662653 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
