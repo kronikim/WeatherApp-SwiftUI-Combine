@@ -14,6 +14,12 @@
 		D8F31AAF29002DC300662653 /* WeatherApp_SwiftUI_CombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31AAE29002DC300662653 /* WeatherApp_SwiftUI_CombineTests.swift */; };
 		D8F31AB929002DC300662653 /* WeatherApp_SwiftUI_CombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31AB829002DC300662653 /* WeatherApp_SwiftUI_CombineUITests.swift */; };
 		D8F31ABB29002DC300662653 /* WeatherApp_SwiftUI_CombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31ABA29002DC300662653 /* WeatherApp_SwiftUI_CombineUITestsLaunchTests.swift */; };
+		D8F31AD2290030E800662653 /* MockForecastWeatherResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31AD0290030E700662653 /* MockForecastWeatherResponse.json */; };
+		D8F31AD3290030E800662653 /* MockForecastWeatherResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31AD0290030E700662653 /* MockForecastWeatherResponse.json */; };
+		D8F31AD4290030E800662653 /* MockForecastWeatherResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31AD0290030E700662653 /* MockForecastWeatherResponse.json */; };
+		D8F31AD5290030E800662653 /* MockCurrentWeatherResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */; };
+		D8F31AD6290030E800662653 /* MockCurrentWeatherResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */; };
+		D8F31AD7290030E800662653 /* MockCurrentWeatherResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,8 @@
 		D8F31AB429002DC300662653 /* WeatherApp-SwiftUI-CombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WeatherApp-SwiftUI-CombineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F31AB829002DC300662653 /* WeatherApp_SwiftUI_CombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp_SwiftUI_CombineUITests.swift; sourceTree = "<group>"; };
 		D8F31ABA29002DC300662653 /* WeatherApp_SwiftUI_CombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp_SwiftUI_CombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8F31AD0290030E700662653 /* MockForecastWeatherResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockForecastWeatherResponse.json; sourceTree = "<group>"; };
+		D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCurrentWeatherResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +182,8 @@
 		D8F31ACC2900300700662653 /* MockResponse */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */,
+				D8F31AD0290030E700662653 /* MockForecastWeatherResponse.json */,
 			);
 			path = MockResponse;
 			sourceTree = "<group>";
@@ -304,7 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F31AA529002DC200662653 /* Preview Assets.xcassets in Resources */,
+				D8F31AD2290030E800662653 /* MockForecastWeatherResponse.json in Resources */,
 				D8F31AA229002DC200662653 /* Assets.xcassets in Resources */,
+				D8F31AD5290030E800662653 /* MockCurrentWeatherResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +324,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F31AD3290030E800662653 /* MockForecastWeatherResponse.json in Resources */,
+				D8F31AD6290030E800662653 /* MockCurrentWeatherResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +333,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F31AD4290030E800662653 /* MockForecastWeatherResponse.json in Resources */,
+				D8F31AD7290030E800662653 /* MockCurrentWeatherResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
