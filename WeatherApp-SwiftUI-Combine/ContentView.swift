@@ -17,7 +17,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            OnlineShoppingView()
+            MainWeatherView()
                 .tabItem {
                     Label("Weather", systemImage: "cloud.sun.rain.fill")
                 }
@@ -28,9 +28,11 @@ struct ContentView: View {
                     Label("Online Shopping", systemImage: "cart")
                 }
                 .tag(Tab.onlineShopping)
+        }.onAppear() {
+            UITabBar.appearance().isTranslucent = false
+            UITabBar.appearance().backgroundColor = .systemBackground
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -38,4 +40,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-

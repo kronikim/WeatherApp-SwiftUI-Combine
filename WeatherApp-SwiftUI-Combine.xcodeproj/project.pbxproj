@@ -66,6 +66,10 @@
 		D8F31B3329005D0B00662653 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B3229005D0B00662653 /* WeatherService.swift */; };
 		D8F31B3529006C7B00662653 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B3429006C7B00662653 /* NetworkProvider.swift */; };
 		D8F31B372900700B00662653 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B362900700B00662653 /* NetworkError.swift */; };
+		D8F31B39290073BA00662653 /* MainWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B38290073BA00662653 /* MainWeatherView.swift */; };
+		D8F31B3B2900742D00662653 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B3A2900742D00662653 /* WeatherViewModel.swift */; };
+		D8F31B3D2900747000662653 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B3C2900747000662653 /* StateModel.swift */; };
+		D8F31B3F290074E100662653 /* cityList.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31B3E290074E100662653 /* cityList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +130,10 @@
 		D8F31B3229005D0B00662653 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		D8F31B3429006C7B00662653 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		D8F31B362900700B00662653 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D8F31B38290073BA00662653 /* MainWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherView.swift; sourceTree = "<group>"; };
+		D8F31B3A2900742D00662653 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		D8F31B3C2900747000662653 /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
+		D8F31B3E290074E100662653 /* cityList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cityList.json; path = ../../../../../Downloads/cityList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +244,8 @@
 		D8F31AC929002FEB00662653 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31B212900410500662653 /* WeatherIcon.swift */,
+				D8F31B3C2900747000662653 /* StateModel.swift */,
 				D8F31AF1290036E000662653 /* ServiceModel */,
 			);
 			path = Model;
@@ -252,7 +262,7 @@
 		D8F31ACB29002FF800662653 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D8F31B212900410500662653 /* WeatherIcon.swift */,
+				D8F31B3A2900742D00662653 /* WeatherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -260,6 +270,7 @@
 		D8F31ACC2900300700662653 /* MockResponse */ = {
 			isa = PBXGroup;
 			children = (
+				D8F31B3E290074E100662653 /* cityList.json */,
 				D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */,
 				D8F31AD0290030E700662653 /* MockForecastWeatherResponse.json */,
 				D8F31B0A29003B3E00662653 /* MockForecastWeatherBuilder.swift */,
@@ -331,6 +342,7 @@
 				D8F31B232900415E00662653 /* DailyForecastWeatherView.swift */,
 				D8F31B1729003DE700662653 /* TodayWeatherView.swift */,
 				D8F31B1329003D8A00662653 /* WeatherBackgroundView.swift */,
+				D8F31B38290073BA00662653 /* MainWeatherView.swift */,
 			);
 			path = WeatherMainView;
 			sourceTree = "<group>";
@@ -440,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F31AA529002DC200662653 /* Preview Assets.xcassets in Resources */,
+				D8F31B3F290074E100662653 /* cityList.json in Resources */,
 				D8F31AD2290030E800662653 /* MockForecastWeatherResponse.json in Resources */,
 				D8F31AA229002DC200662653 /* Assets.xcassets in Resources */,
 				D8F31AD5290030E800662653 /* MockCurrentWeatherResponse.json in Resources */,
@@ -472,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F31B2729004C4500662653 /* HourlyForecastView.swift in Sources */,
+				D8F31B3D2900747000662653 /* StateModel.swift in Sources */,
 				D8F31AA029002DC100662653 /* ContentView.swift in Sources */,
 				D8F31B222900410500662653 /* WeatherIcon.swift in Sources */,
 				D8F31B242900415E00662653 /* DailyForecastWeatherView.swift in Sources */,
@@ -480,9 +494,11 @@
 				D8F31AF32900371100662653 /* CurrentWeatherResponse.swift in Sources */,
 				D8F31B3129005B1B00662653 /* WeatherServiceProtocol.swift in Sources */,
 				D8F31AE12900319800662653 /* WebView.swift in Sources */,
+				D8F31B39290073BA00662653 /* MainWeatherView.swift in Sources */,
 				D8F31AFB290037C600662653 /* CurrentWeatherMainValue.swift in Sources */,
 				D8F31ADE2900319800662653 /* WebViewViewModel.swift in Sources */,
 				D8F31B032900391100662653 /* Date+Extension.swift in Sources */,
+				D8F31B3B2900742D00662653 /* WeatherViewModel.swift in Sources */,
 				D8F31AF72900376100662653 /* Weather.swift in Sources */,
 				D8F31AEE2900332F00662653 /* OnlineShoppingView.swift in Sources */,
 				D8F31B2D29005A5000662653 /* EndpointProtocol.swift in Sources */,

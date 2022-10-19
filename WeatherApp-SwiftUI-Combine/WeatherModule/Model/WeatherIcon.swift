@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
- 
 struct WeatherIcon {
     let id: Int
     let main, weatherDescription, icon: String
