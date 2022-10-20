@@ -61,8 +61,7 @@ struct WebView: UIViewRepresentable {
             // Get the title of loaded webcontent
             webView.evaluateJavaScript("document.title") { (response, error) in
                 if let error = error {
-                    print("Error getting title")
-                    print(error.localizedDescription)
+                    print("Error getting title : \(error.localizedDescription)")
                 }
                 
                 guard let title = response as? String else {

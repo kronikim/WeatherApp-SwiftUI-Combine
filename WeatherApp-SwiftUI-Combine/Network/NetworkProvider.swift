@@ -33,7 +33,6 @@ class NetworkProvider<Endpoint: EndpointProtocol> {
     
     // MARK: - Getting data
     private func loadData(with request: URLRequest) -> AnyPublisher<Data, Error> {
-        print("loadData func")
         return URLSession.shared.dataTaskPublisher(for: request)
             .mapError({ error -> Error in
                 NetworkError(rawValue: error.code.rawValue) ?? NetworkProviderError.unknownError

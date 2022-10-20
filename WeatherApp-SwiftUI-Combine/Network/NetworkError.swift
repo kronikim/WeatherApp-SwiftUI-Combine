@@ -29,8 +29,6 @@ enum NetworkError: Int, Error {
             return "Your city Id is not valid , please check it.".localized()
         case .requestTimeOut:
             return "Request TimeOut".localized()
-        default:
-            return "Something goes wrong.".localized()
         }
     }
 }
