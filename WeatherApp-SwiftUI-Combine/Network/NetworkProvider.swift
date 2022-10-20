@@ -21,6 +21,7 @@ class NetworkProvider<Endpoint: EndpointProtocol> {
     
     // MARK: - Request building
     private func performRequest(for endpoint: Endpoint) -> URLRequest? {
+        print("url: \(endpoint.absoluteURL)")
         guard let urlComponents = URLComponents(string: endpoint.absoluteURL) else {
             return nil
         }
@@ -37,6 +38,7 @@ class NetworkProvider<Endpoint: EndpointProtocol> {
             .mapError({ error -> Error in
                 NetworkError(rawValue: error.code.rawValue) ?? NetworkProviderError.unknownError
             })
+            .receive(on: RunLoop.main)
             .map { $0.data }
             .eraseToAnyPublisher()
     }

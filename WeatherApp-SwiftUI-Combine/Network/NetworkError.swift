@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum NetworkError: Int, LocalizedError {
+enum NetworkError: Int, Error {
     case badRequest = 400
     case unAuthorized = 401
     case invalidCityId = 404
@@ -36,7 +36,7 @@ enum NetworkError: Int, LocalizedError {
 }
 
 
-enum NetworkProviderError: LocalizedError {
+enum NetworkProviderError: Error {
     case invalidURL
     case dataNil
     case decodingError
