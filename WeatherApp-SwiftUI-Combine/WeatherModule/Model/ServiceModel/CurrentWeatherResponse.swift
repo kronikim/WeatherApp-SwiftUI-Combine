@@ -8,7 +8,7 @@
 import Foundation
 
 struct CurrentWeatherResponse: Codable {
-    let coord: Coordinate
+    //let coord: Coordinate
     let weather: [Weather]
     let base: String
     let main: CurrentWeatherMainValue
@@ -16,14 +16,14 @@ struct CurrentWeatherResponse: Codable {
     let wind: Wind?
     let clouds: Clouds?
     let dt: Int
-    let sys: Sys
+   // let sys: Sys
     let timezone, id: Int
     let name: String
     let cod: Int
     
     static func emptyInit() -> CurrentWeatherResponse {
         return CurrentWeatherResponse(
-            coord: Coordinate.emptyInit(),
+           // coord: Coordinate.emptyInit(),
             weather: [],
             base: "",
             main: CurrentWeatherMainValue.emptyInit(),
@@ -31,11 +31,15 @@ struct CurrentWeatherResponse: Codable {
             wind: Wind.emptyInit(),
             clouds: Clouds.emptyInit(),
             dt: 0,
-            sys: Sys.emptyInit(),
+           // sys: Sys.emptyInit(),
             timezone: 0,
             id: 0,
             name: "",
             cod: 0)
+    }
+    
+    func IsEmpty() -> Bool {
+        return id == 0 ? true : false
     }
 }
 
@@ -59,10 +63,9 @@ struct Clouds: Codable {
 struct Wind: Codable {
     let speed: Double
     let deg: Int
-    let gust: Double
     
     static func emptyInit() -> Wind {
-        return Wind(speed: 0.0, deg: 0, gust: 0.0)
+        return Wind(speed: 0.0, deg: 0)
     }
 }
 
