@@ -73,8 +73,8 @@
 		D8F31B39290073BA00662653 /* MainWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B38290073BA00662653 /* MainWeatherView.swift */; };
 		D8F31B3B2900742D00662653 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B3A2900742D00662653 /* WeatherViewModel.swift */; };
 		D8F31B3D2900747000662653 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B3C2900747000662653 /* StateModel.swift */; };
-		D8F31B3F290074E100662653 /* cityList.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F31B3E290074E100662653 /* cityList.json */; };
 		D8F31B5929008AE900662653 /* CurrentWeatherResponseModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F31B5829008AE900662653 /* CurrentWeatherResponseModelTests.swift */; };
+		D8F442A42901A52000DEFCA6 /* cityList.json in Resources */ = {isa = PBXBuildFile; fileRef = D8F442A32901A52000DEFCA6 /* cityList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,8 +142,8 @@
 		D8F31B38290073BA00662653 /* MainWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherView.swift; sourceTree = "<group>"; };
 		D8F31B3A2900742D00662653 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		D8F31B3C2900747000662653 /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
-		D8F31B3E290074E100662653 /* cityList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cityList.json; path = ../../../../../Downloads/cityList.json; sourceTree = "<group>"; };
 		D8F31B5829008AE900662653 /* CurrentWeatherResponseModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherResponseModelTests.swift; sourceTree = "<group>"; };
+		D8F442A32901A52000DEFCA6 /* cityList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cityList.json; path = ../../../../../.Trash/cityList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,7 +285,7 @@
 		D8F31ACC2900300700662653 /* MockResponse */ = {
 			isa = PBXGroup;
 			children = (
-				D8F31B3E290074E100662653 /* cityList.json */,
+				D8F442A32901A52000DEFCA6 /* cityList.json */,
 				D8F31AD1290030E800662653 /* MockCurrentWeatherResponse.json */,
 				D8F31AD0290030E700662653 /* MockForecastWeatherResponse.json */,
 				D8F31B0A29003B3E00662653 /* MockForecastWeatherBuilder.swift */,
@@ -467,7 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F31AA529002DC200662653 /* Preview Assets.xcassets in Resources */,
-				D8F31B3F290074E100662653 /* cityList.json in Resources */,
+				D8F442A42901A52000DEFCA6 /* cityList.json in Resources */,
 				D8F31AD2290030E800662653 /* MockForecastWeatherResponse.json in Resources */,
 				D8F31AA229002DC200662653 /* Assets.xcassets in Resources */,
 				D8F31AD5290030E800662653 /* MockCurrentWeatherResponse.json in Resources */,
@@ -718,8 +718,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -747,8 +746,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
