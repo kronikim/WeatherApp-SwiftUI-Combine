@@ -41,6 +41,7 @@ struct MainWeatherView: View {
                     }) {
                         Text("Couldn't get data, please retry..")
                             .foregroundColor(.white)
+                            .opacity(weatherViewModel.stateModel == .failed ? 1 : 0)
                     }
                 }
             }

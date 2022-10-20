@@ -36,9 +36,8 @@ final class WeatherViewModel: ObservableObject {
     }
     
     init() {
-      //  getDataFromJson()
-        getCurrentWeather()
-        requestForecastWeather()
+        self.getCurrentWeather()
+        //self.getDataFromJson()
     }
     
     private func getCurrentWeather() {
@@ -46,13 +45,20 @@ final class WeatherViewModel: ObservableObject {
             .decode(type: CurrentWeatherResponse.self, decoder: JSONDecoder())
             .receive(on: RunLoop.main)
             .sink(
-                receiveCompletion: { [weak self] _ in
-                   // self?.stateCurrentWeather = .failed
+                receiveCompletion: { [weak self]  completion in
+                    switch completion {
+                        case .failure(let error):
+                            print("FAILURE getCurrentWeather: \(error)")
+                            self?.stateCurrentWeather = .failed
+                        case .finished:
+                            print("SUCCESS getCurrentWeather")
+                        }
                 },
                 receiveValue: { [weak self] weather in
                     self?.currentWeather = weather
                     self?.stateCurrentWeather = .success
                     print(weather)
+                    self?.requestForecastWeather()
                 }
             )
             .store(in: &bag)
@@ -63,8 +69,15 @@ final class WeatherViewModel: ObservableObject {
             .decode(type: ForecastWeatherResponse.self, decoder: JSONDecoder())
             .receive(on: RunLoop.main)
             .sink(
-                receiveCompletion: { [weak self] _ in
+                receiveCompletion: { [weak self]  completion in
                     self?.forecastWeatherRes = nil
+                    switch completion {
+                        case .failure(let error):
+                        print("FAILURE requestForecastWeather: \(error)")
+                            self?.stateForecastWeather = .failed
+                        case .finished:
+                            print("SUCCESS requestForecastWeather")
+                        }
                 },
                 receiveValue: { [weak self] forecastWeather in
                     self?.forecastWeatherRes = forecastWeather
@@ -99,8 +112,10 @@ final class WeatherViewModel: ObservableObject {
             return
         } else if stateCurrentWeather == .success && stateForecastWeather == .success {
             stateModel = .success
-        } else {
+        } else if stateCurrentWeather == .failed || stateForecastWeather == .failed {
             stateModel = .failed
+        } else {
+            return
         }
     }
 }
